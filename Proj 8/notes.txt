@@ -1,0 +1,19 @@
+ (0)(0,1,2,3,4)
+ (1)(0,1,2,3,4)
+ (2)(0,1,2,3,4)
+ (3)(0,1,2,3,4)
+ (4)(0,1,2,3,4)
+ (i)    (j)
+ 
+ (i*5)+j
+ 
+ //---------
+
+need to write the first half of my writeup--see if I can find that sheet of notes, it should come in handy
+ask someone about that--should I add stuff as I go along, or would it be better to note that I missed something and come back to it later?
+Need to add some form of turn implementation
+add all the parameters that turn on and off buttons
+change heights of the two hands so that they match up a little better with the field (or not, this is not necessarily the best look for the program
+add a help button
+add the changeX and changeY to the buttonClicked method
+add the attackCard and attackPlayer methods

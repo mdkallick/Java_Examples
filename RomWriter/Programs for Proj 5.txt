@@ -1,0 +1,47 @@
+program 1 (as according to the instructions provided)
+-0 - load 0000 to ACC low
+-1 - load 0001 to ACC high
+-2 - load ACC to LR
+-3 - sub 0001 from LR - loaded from IR
+-4 - conditionally branch to 6 if LR is 0
+-5 - branch to 3
+-6 - load 1001 to ACC low
+-7 - load 0000 to ACC high
+-8 - sub 0001 from ACC - loaded from IR
+-9 - load 1's to LR
+10 - binary xor to LR | source: all 1's
+11 - conditionally branch to 0 if ACC is 0
+12 - branch to 8
+
+---------------
+program 2 (does have an intentional infinite loop, just for fun!)
+-0 - load 1010 to ACC low
+-1 - load 0101 to ACC high
+-2 - load ACC to LR
+-3 - load 1000 to ACC high
+-4 - load 0001 to ACC low
+-5 - binary xor to LR | source: all 1'source
+-6 - add ACC to LR
+-7 - branch to 6
+
+(this is meant to be an infinite loop)
+
+----------------
+program 3 (note: I had to speed the slock up by quite a bit for this one, but it ends up looking kinda cool, so.)
+-0 - load 1111 to ACC low
+-1 - load 1111 to ACC high
+-2 - load ACC to LR
+-3 - load 1010 to ACC low
+-4 - load 1010 to ACC high
+-5 - binary and to LR | source: ACC
+-6 - binary sub 1 to ACC | source: IR
+-7 - conditional branch to 9 if ACC is 0
+-8 - branch to 5
+-9 - load all 1's to LR
+-10 - binary sub 1 to LR | source: IR 
+-11 - conditional branch to 0 if LR is 0
+-12 - branch to 10
+
+----------------
+
+NOTE: all of these were written in my java createaprogram thing--aka romWriter.java

@@ -1,0 +1,23 @@
+Plans for project 5:
+-Builders, trees, and wooden obstacles.
+-The builders get wood from trees, which generate wood at a given rate.
+-They then move randomly for a given number of turns, (8)
+after which they spawn ('build') an obstacle. They then begin looking for more wood.
+-If they can't find wood within a certain number of turns, They become unemployed(despawn).
+As a beginning rulebook:
+-builders have 10 life, and lose one life each turn without wood.
+-builders gain two lives by getting wood.
+-trees generate 1 wood every 4 turns, and die if they ever go down to 0 wood.
+-obstacles are limited to 1/5 of the total landscape space (the oldest despawn 
+if more are made).
+-trees spawn new trees if they have more than 5 wood and there is a tree near them,
+1% of the time.
+builders spawn new builders if they have wood and a builder near them, 1% of the time.
+
+
+------------
+tally of helpers:
+Ringo
+Goku
+Will Simmons
+Stephanie Taylor
